@@ -1,0 +1,20 @@
+# Python 3.14.5
+# Core dependencies
+
+google-api-python-client==2.200.0
+pandas==3.0.6
+python-dotenv==1.2.3
+matplotlib==3.11.2
+scikit-learn==1.9.1
+joblib==1.6.0
+
+# Interactive demo
+streamlit==1.67.0
+
+# Security minimum versions for transitive dependencies
+certifi>=2026.10.18
+opentelemetry-api>=1.45.2
+pillow>=13.0.0
+pyasn1>=0.6.5
+
+huggingface_hub==2.4.0

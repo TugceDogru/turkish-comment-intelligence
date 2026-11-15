@@ -1,0 +1,113 @@
+
+# ============================================================
+# Turkish Comment Intelligence
+# Git Ignore Rules
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Environment variables and secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# ------------------------------------------------------------
+# 2. Python virtual environments
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# ------------------------------------------------------------
+# 3. Python cache and build artifacts
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# ------------------------------------------------------------
+# 4. IDE and operating system files
+# ------------------------------------------------------------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# 5. Private datasets
+# ------------------------------------------------------------
+# All collected, cleaned, annotated, and split data is private.
+/data/
+
+# ------------------------------------------------------------
+# 6. Private video source metadata
+# ------------------------------------------------------------
+configs/video_sources_verified.csv
+
+# ------------------------------------------------------------
+# 7. Local model artifacts
+# ------------------------------------------------------------
+# Trained models will be distributed separately if published.
+/models/
+
+# ------------------------------------------------------------
+# 8. Private annotation and review reports
+# ------------------------------------------------------------
+reports/annotation_audit.csv
+reports/annotation_audit_high_medium_review.csv
+reports/annotation_audit_summary.json
+reports/annotation_corrections_log.csv
+reports/annotation_corrections_summary.json
+reports/backups/
+
+# ------------------------------------------------------------
+# 9. Reports containing potentially identifying information
+# ------------------------------------------------------------
+# Review these files before selectively publishing them.
+reports/eda/
+reports/splits/
+
+# ------------------------------------------------------------
+# 10. Inference results and generated outputs
+# ------------------------------------------------------------
+outputs/
+predictions/
+data/inference/
+*.log
+
+# ------------------------------------------------------------
+# 11. Notebook checkpoints and temporary files
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+*.tmp
+*.bak
+*.swp
+~$*
+
+# ------------------------------------------------------------
+# 12. Large local model checkpoints
+# ------------------------------------------------------------
+checkpoints/
+runs/
+wandb/
+lightning_logs/
+
+# ------------------------------------------------------------
+# 13. Allow safe documentation and aggregate reports
+# ------------------------------------------------------------
+# src/, docs/, requirements.txt, and README.md remain visible.
+# reports/baseline/ and reports/baseline_tuned/ remain visible.
+# Additional report folders should be reviewed before publishing.
