@@ -428,6 +428,12 @@ The CLI prints structured JSON predictions.
 
 ## Interactive Streamlit Demo
 
+### Application Preview
+
+![Turkish Comment Intelligence Streamlit Demo](assets/streamlit-demo.png)
+
+*Example prediction using a synthetic Turkish comment and the tuned baseline models.*
+
 The project includes a Streamlit interface for exploring model predictions.
 
 Start the application:
